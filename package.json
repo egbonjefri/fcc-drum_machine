@@ -2,7 +2,7 @@
   "name": "fcc_drum_machine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://egbonjefri.github.io/fcc-drum_machine/",
+  "homepage": "https://fcc-drumachine.netlify.app/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
