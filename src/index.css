@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(95deg, rgb(48, 48, 48) 50%, rgb(41, 39, 39) 100%);
+
+}
+
+.App {
+  display: flex;
+  margin: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.drums-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10%
+  
+}
+.drums {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: .65s ease-in-out;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10;
+  box-shadow: 3px 3px 5px black;
+  color: #ffffff;
+}
+@media (max-width: 1205px) {
+  .drums {
+    width: 7rem;
+    height: 7rem;
+  }
+  .cont {
+    min-width: 17rem !important;
+    min-height: 15rem !important;
+  }
+  .tracks {
+    width: 30% !important
+  }
+}
+@media (max-width: 840px) {
+  .App {
+    display: grid
+  }
+  .drums-cta {
+    column-gap: 0 !important
+  }
+  .cont {
+    margin: 7rem !important
+  }
+}
+@media (max-width: 445px) {
+  .drums {
+    width: 5rem;
+    height: 5rem;
+  }
+  .cont {
+    margin-top: 6rem !important;
+    margin-left: 2rem !important;
+    margin-right: 4rem !important;
+  }
+} 
+@media (max-width: 365px) {
+.cont {
+  margin-left: 2rem !important;
+  margin-right: 3rem !important;
+}
+}
+.drums:hover {
+  background-color: grey;
+  transition: .35s ease-in-out;
+}
+.active {
+  font-weight: bolder;
+}
+.switch.whit label .lever {
+  background-color: #ff0000;
+}
+.switch.whit label input[type=checkbox]:checked+.lever {
+  background-color: #0011ff;
+}
+.switch.whit label input[type=checkbox]:checked+.lever:after {
+  background-color: #ffffff;
+}
+
+
+.new {
+  background-color: rgb(53, 43, 24) !important;
+  transform: translate(0px, 5px);
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 25rem;
+  min-height: 20rem;
+  margin: 10rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 3px 3px 5px black;
+  background: linear-gradient(95deg, rgb(48, 48, 48) 50%, rgb(41, 39, 39) 100%);
+
+}
+.tracks {
+  margin-top: 1.5rem;
+  width: 24%;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgb(44, 44, 44);
+}
+
+.power{
+  font-size: 1rem;
+}
+.inactive {
+  opacity: 0.5;
+  transition: .35s ease-in-out;
+}
