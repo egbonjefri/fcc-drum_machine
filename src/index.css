@@ -130,3 +130,14 @@ body {
   opacity: 0.5;
   transition: .35s ease-in-out;
 }
+.credit {
+  color: white;
+  margin-bottom: -3rem;
+  margin-top: 3rem;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+.credit a {
+  color: rgb(170, 147, 147);
+  text-decoration: underline;
+}

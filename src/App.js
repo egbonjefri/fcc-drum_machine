@@ -37,6 +37,7 @@ function App() {
     </div> : <div className='drums-cta'>
       {drumMapTrue}
       </div>}
+      
     <div className='cont'>
     <div className="switch whit">
     <label>
@@ -60,6 +61,8 @@ function App() {
       Power On
     </label>
   </div> 
+  <p className='credit'>Created by <a rel="noreferrer" target='_blank' href='https://egbonjefri.github.io/'>@egbonjefri</a> for freeCodeCamp</p>
+
     </div>
     </div>
   );
